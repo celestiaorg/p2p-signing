@@ -1,7 +1,7 @@
-version: v2
+version: v1beta1
 plugins:
-  - local: protoc-gen-gogofaster
-    out: ./proto/
+  - name: gogofaster
+    out: .
     opt:
       - plugins=grpc
       - paths=source_relative

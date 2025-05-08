@@ -15,5 +15,5 @@ proto-lint:
 
 proto-format:
 	@echo "Formatting Protobuf files"
-	@find . -name '*.proto' -path "./proto/*" -exec clang-format -i {} \;
+	@find . -name '*.proto' -path "./*" -exec clang-format -i {} \;
 .PHONY: proto-format
