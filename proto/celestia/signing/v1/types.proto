@@ -1,5 +1,5 @@
 syntax = "proto3";
-package celestiaorg.signing.v1;
+package celestia.signing.v1;
 option go_package = "github.com/celestiaorg/p2p-signing/proto/signing";
 
 // P2PMessageRequest asks a kms system to sign a hash.
