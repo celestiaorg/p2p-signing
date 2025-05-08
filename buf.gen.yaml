@@ -1,6 +1,6 @@
-version: v2
+version: v1beta1
 plugins:
-  - name: protoc-gen-gogofaster
+  - name: gogofaster
     out: .
     opt:
       - plugins=grpc
