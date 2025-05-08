@@ -1,11 +1,7 @@
 name: Protobuf Lint
 on:
   pull_request:
-    paths:
-      - '.'
   push:
-    paths:
-      - '.'
 
 jobs:
   lint:
