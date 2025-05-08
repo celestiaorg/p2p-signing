@@ -4,8 +4,6 @@ on:
     paths:
       - 'proto/**'
   push:
-    branches:
-      - v0.34.x-celestia
     paths:
       - 'proto/**'
 
