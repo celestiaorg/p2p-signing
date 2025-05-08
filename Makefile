@@ -10,10 +10,10 @@ proto-gen:
 # execution only.
 proto-lint:
 	@echo "Linting Protobuf files"
-	@go run github.com/bufbuild/buf/cmd/buf@$(BUF_VERSION) lint
+	@go run github.com/bufbuild/buf/cmd/buf@$(BUF_VERSION) lint proto
 .PHONY: proto-lint
 
 proto-format:
 	@echo "Formatting Protobuf files"
-	@find . -name '*.proto' -path "./*" -exec clang-format -i {} \;
+	@find . -name '*.proto' -path "./proto/*" -exec clang-format -i {} \;
 .PHONY: proto-format
