@@ -1,4 +1,4 @@
-module celestiaorg/p2p-signing
+module github.com/celestiaorg/p2p-signing
 
 go 1.24.2
 
