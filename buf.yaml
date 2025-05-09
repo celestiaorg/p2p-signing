@@ -1,16 +1,6 @@
-version: v1beta1
-name: buf.build/celestia/p2p-signing
-
-lint:
-  use:
-    - BASIC
-    - FILE_LOWER_SNAKE_CASE
-    - UNARY_RPC
-  except:
-    - RPC_NO_SERVER_STREAMING
-breaking:
-  use:
-    - FILE
-
+version: v2
+modules:
+  - path: proto
+    name: buf.build/celestia/p2p-signing
 deps:
   - buf.build/gogo/protobuf
