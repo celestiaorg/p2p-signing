@@ -2,15 +2,17 @@ syntax = "proto3";
 package celestia.signing.v1;
 option go_package = "github.com/celestiaorg/p2p-signing/proto/signing";
 
-// P2PMessageRequest asks a kms system to sign a hash.
-message P2PHashRequest {
-  string uid = 1;
+import "tendermint/privval/types.proto";
+
+// SignP2PMessageRequest asks a kms system to sign a hash.
+message SignP2PMessageRequest {
+  bytes hash = 1;
   string chain_id = 2;
-  bytes hash = 3;
+  string unique_id = 3;
 }
 
-// SignedP2PHash returns the signature from the kms.
-message SignedP2PHash {
+// SignedP2PMessageResponse returns the signature from the kms.
+message SignedP2PMessageResponse {
   bytes signature = 1;
-  bytes hash = 2;
+  tendermint.privval.RemoteSignerError error = 2;
 }

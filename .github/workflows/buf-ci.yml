@@ -20,4 +20,4 @@ jobs:
           against: 'https://github.com/celestiaorg/p2p-signing.git#branch=main,subdir=proto'
       - uses: bufbuild/buf-lint-action@v1.1.1
         with:
-          input: proto
+          input: .

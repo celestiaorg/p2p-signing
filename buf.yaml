@@ -3,4 +3,5 @@ modules:
   - path: proto
     name: buf.build/celestia/p2p-signing
 deps:
-  - buf.build/gogo/protobuf
+  - buf.build/tendermint/tendermint:v0.38.x
+  - buf.build/cosmos/gogo-proto
